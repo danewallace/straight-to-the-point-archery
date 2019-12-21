@@ -1,5 +1,23 @@
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
 
+
+.grid-container {
+grid-template-columns: auto auto auto auto;
+grid-template-rows: auto auto auto auto;
+}
+
+
+header { grid-area: 1 / 1 / 1 / 4; }
+#map { grid-area: 2 / 1 / 3 / 2; }
+#contact { grid-area: 2 / 2 / 4 / 4; }
+footer { grid-area: 3 / 1 / 4 / 4; }
 
 
 /* Basic text styles */
@@ -10,11 +28,18 @@
 
 h2 {
   color: #1b447f;
+  margin: 2px;
+  padding: 2px;
 }
 
 a {
   text-decoration: none;
   color: #03a3df;
+}
+
+p {
+  margin: 2px;
+  padding: 2px;
 }
 
 footer {
@@ -62,17 +87,8 @@ margin-top: 8px;
   align-items: flex-start;
 }
 
-/* grid layout */
+/* map styling */
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
+#map {
+  background-color: white;
 }
-
-header { grid-area: 1 / 1 / 2 / 7; }
-.map { grid-area: 2 / 1 / 5 / 3; }
-.contact { grid-area: 2 / 3 / 5 / 7; }
-footer { grid-area: 5 / 1 / 6 / 7; }
