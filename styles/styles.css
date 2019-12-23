@@ -97,6 +97,15 @@
   top: auto;
 }
 
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 h2 {
   color: #1b447f;
   margin: 2px;
